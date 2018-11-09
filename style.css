@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 80px;
+    background-color: #023a5c;
+}
+.nav .logo{
+    transform: translate(-14px,43px);
+    box-shadow: 4px 3px 12px 2px #969696e6;
+}
+.nav-link{
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+}
+.nav .icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav .form{
+display: flex;
+position: fixed;
+right: 20px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+main{
+    display: flex;
+}
+
+.leftSidebar{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    padding: 80px 10px;
+    box-shadow: 0 1px 1px 1px gray;
+    position: relative;
+}
+.leftSidebar a{
+    color: #023a5c;
+    text-decoration: none;
+    margin: 5px 16px;
+}
+.leftSidebar a img{
+    width: 25px;
+    height: 25px;
+}
+.leftSidebar a > img{
+    transform: translate(-8px,0)
+}
+hr{
+    border:none;
+    border-top:2px dotted #023a5c;
+    opacity: 0.5;
+    background-color:#fff;
+    height:1px;
+    width: 75%;
+    margin: 10px 16px;
+
+}
+.leftSidebar span{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    padding: 10px 1px;
+}
+.leftSidebar span img{
+    cursor: pointer;
+}
+
+header{
+    width: 50vw;
+    text-align: center;
+    margin: 110px 15vw;
+}
+
+header h1{
+    height: 100px;
+    border-bottom: 2px dotted #023a5c;
+    color:#023a5c;
+}
+
+header h1 img{
+    width: 55px;
+    height: 50px;
+    margin: -8px 8px;
+}
+header .content{
+    display: block;
+    text-align: justify;
+} 
+
+header .content div{
+    break-after: column;
+    column-width: 100px;
+    column-count: 2;
+}
+header .content img{
+    width: 100%;
+}
+
+header .content p.margin {
+    margin: 40px 0 20px 0;
+}
+header .content .text h5{
+font-weight: normal;
+margin-top: 15px;
+}
+header .content .text p{
+font-size: 12px;
+}
+
+footer{
+    height: 50px;
+    background-color:#023a5c;
+}
+.hide{
+transform: translate(-120px,0);
+transition: all 1s ease;
+}
+.show{
+transform: translate(0px,0);
+transition: all 1s ease;
+}
+.rotate{
+    transform: rotate(180deg);
+}
