@@ -1,7 +1,8 @@
 const menuL = document.querySelector('.leftSidebar');
+const input = document.querySelector('.form input');
 
 function hide() {
-    document.querySelector('#arrow').classList.toggle('rotate')
+    document.querySelector('#arrow').classList.toggle('rotate');
     if (menuL.classList.contains('hide')) {
         menuL.classList.remove('hide');
         menuL.classList.add('show');
@@ -12,11 +13,11 @@ function hide() {
     }
 }
 
-
 function show() {
-    document.querySelector('.form input').classList.remove('hidden');
+    input.classList.add('focus');
+    input.classList.remove('hidden');
 }
 
-document.querySelector('.icon').addEventListener('mousemove', show)
-document.getElementById('arrow').addEventListener('click', hide)
+document.querySelector('.icon').addEventListener('click', show);
+document.getElementById('arrow').addEventListener('click', hide);
 

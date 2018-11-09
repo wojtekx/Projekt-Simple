@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-family:'Roboto', sans-serif;
+}
 .nav{
     display: flex;
     justify-content: center;
@@ -29,13 +31,11 @@
 }
 .nav .form{
 display: flex;
-position: fixed;
+position: absolute;
 right: 20px;
+top: 30px;
 }
 
-.hidden{
-    visibility: hidden;
-}
 main{
     display: flex;
 }
@@ -136,4 +136,14 @@ transition: all 1s ease;
 }
 .rotate{
     transform: rotate(180deg);
+}
+.hidden{
+    opacity: 0;
+}
+.focus{
+    animation: show 0.5s ease;
+}
+@keyframes show{
+    from{opacity:0}
+    to{opacity:1}
 }
